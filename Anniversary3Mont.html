@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary 3 M❤️ </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #f54291;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #f54291;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d4357a;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .success {
+      color: #28a745;
+    }
+
+    .error {
+      color: #dc3545;
+    }
+
+    .image-container img {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉กรอกวันครบรอบของเรา🎉 </h1>
+    <input type="text" id="dateInput" placeholder="ใส่วันครบรอบ (เช่น วัน/เดือน/ปี)" />
+    <button onclick="checkDate()">ตรวจสอบ👈 </button>
+    <div class="message" id="message"></div>
+    <div class="image-container" id="imageContainer" style="display: none;">
+      <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474238327_1772165703562889_4692518743328675131_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vqHlP7GtqvIQ7kNvgFYrLl0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGzXhsGbWBsd4syrVjstfJ-romY2_tD3HhSrDGYT1MMMg&oe=67C06DEB">
+      <button class="next-button" onclick="nextPage()">
+        <span>กดตรงนี้เพื่อไปหน้าถัดไป👈</span> 
+    </button>
+      <p class="success">คุณจำวันสำคัญของเราได้! ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function checkDate() {
+      const correctDate = "07/11/2567"; // วันครบรอบที่ถูกต้อง
+      const userInput = document.getElementById("dateInput").value;
+      const message = document.getElementById("message");
+      const imageContainer = document.getElementById("imageContainer");
+
+      // รีเซ็ตข้อความและภาพ
+      message.innerHTML = "";
+      imageContainer.style.display = "none";
+
+      if (userInput === correctDate) {
+        message.innerHTML = "🎉 ยินดีด้วย! คุณกรอกวันถูกต้องแล้ว! 🎉";
+        message.className = "message success";
+        imageContainer.style.display = "block";
+      } else {
+        message.innerHTML = "❌ คุณกรอกวันผิด ลองอีกครั้งนะ! ❌";
+        message.className = "message error";
+      }
+    }
+
+    function nextPage() {
+      window.location.href = "nextpage.html"; // ไปยังหน้าถัดไป
+    }
+  </script>
+</body>
+</html>

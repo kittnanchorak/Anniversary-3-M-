@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary POND&YOK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .message-box {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #f54291;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .image-frame {
+            width: 400px;
+            height: 300px;
+            border: 4px solid #f54291;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* สไตล์ของปุ่ม */
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f54291;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #e02e76;
+        }
+
+        /* สไตล์หัวใจพุ่ง */
+        .heart-container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: #f54291;
+            animation: heartAnimation 2s ease-in-out infinite;
+        }
+
+        @keyframes heartAnimation {
+            0% {
+                transform: translateX(-50%) scale(1);
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.5);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+  
+    
+
+    <!-- ข้อความตรงกลาง -->
+    <div class="message-box">
+        <h1>สุขสันต์วันครบรอบ! 🎉</h1>
+        <p>ขอบคุณที่อยู่ด้วยกันมาตลอด ❤️ รักมากๆ นะ!</p>
+    </div>
+
+
+    <!-- รูปภาพเรียงกัน -->
+    <div class="image-container">
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474658189_455835694134133_2231344393097004202_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=m4xmDbTT_IIQ7kNvgHBNDLZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gEil1q09BRqpCCmBviZeC53ZposG9SHCD6FRjOk5U6skw&oe=67C06771"
+                alt="ภาพ 1">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474651831_3674571076021676_694054731674757366_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=l45xnGkieWcQ7kNvgFLMwsg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGU1-OAClWdi8KJWzfUTcYiwRX0tRgpO4IlItKR_4EErg&oe=67C07698"
+                alt="ภาพ 2">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/473675283_1129752135263443_8706369218575984241_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=sViF_PY17boQ7kNvgFH4xvs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGNHY5s0XUfyILJqSuYintHYaUxw-yX8Kgi2_tK0kfhKQ&oe=67C06BDB"
+                alt="ภาพ 3">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474729520_514732281100434_1240755874543223122_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xy1uplCJYGIQ7kNvgH4ky_R&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGdRZ3Y1ilothJeE6lOVkLOEZlIlRhQFRYqhBWCMmMzZQ&oe=67C04D01" alt="ภาพ 4">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474755606_539271942480996_3627463824226804993_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=hZuuDI04vdwQ7kNvgFZmaZ8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFPRCpvU2XgSum_pyfTNzXI2k11Iqlz_WSpdmS6tzLhdw&oe=67C0433B"
+                alt="ภาพ 5">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474230429_9285458521512663_1949849331873291843_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8qWyaEt4RyUQ7kNvgGEma_N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gE9t78xvswL7Zeyjw5G9bo_Qmx8hKX7d1YXSQS2MxQ7gQ&oe=67C05721"
+                alt="ภาพ 6">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/467487715_937949931593084_3112773017693025239_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=VlRmBDSKJ9gQ7kNvgE2GFfD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFYh3_UfWomfTs8cR3XT920B_aGeawO6y9hlUZJT-Hq-A&oe=67C05D73"
+                alt="ภาพ 7">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/475365874_1795131381307581_3492877818191363132_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=LUtshxqf2w8Q7kNvgHso-Nd&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gESRPrmFjwqQjSMqen82nUFldfPMoCZiz_UPCLdEurS8Q&oe=67C05580"
+                alt="ภาพ 8">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474451857_1548246865878669_3531259982197242646_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=rFZ8aBX4u0cQ7kNvgHfLql0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGT7mguFedY0BWoka8z5A10sMAqwEcvFVWqmPpXW-OatA&oe=67C05B5F"
+                alt="ภาพ 9">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474433245_529587000141239_404645774154728681_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xyOllF-QnUsQ7kNvgH6YHfS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gE4KXpEv6Njth9mW3mP7VirX67XkS_PdmvDIRYUDgbaFA&oe=67C06858"
+                alt="ภาพ 10">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/474668849_1853539242159308_6320285069961987728_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=p7I5QUvysi4Q7kNvgEQ5-Ho&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHID-40wIpMbJukEGEuOkw5nkYMsdRovijphvJfRK-vEw&oe=67C047E2" alt="ภาพ 11">
+        </div>
+        <div class="image-frame">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/473164623_1345136170188143_2426040969854540161_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fDhbztGy3aUQ7kNvgGru7nT&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gEaZeU6Z9NNZm_XIT-YmJv-YRuXzu9mdmsUuPoh917IKg&oe=67C04ED9" alt="ภาพ 12">
+        </div>
+    </div>
+    <a href="Anniversary3Mont.html" class="back-button">ย้อนกลับไปหน้าแรก👈 </a>
+  <!-- ส่วนหัวใจหลายๆ ดวง -->
+  <script>
+    // ฟังก์ชันสร้างหัวใจที่พุ่งขึ้นมา
+    function createHearts() {
+        const numHearts = 30;  // จำนวนหัวใจที่ต้องการให้แสดง
+        const body = document.body;
+        for (let i = 0; i < numHearts; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-container');
+            heart.innerText = '💖';
+
+            // ตั้งค่าตำแหน่งเริ่มต้นของหัวใจแบบสุ่ม
+            const startPositionX = Math.random() * 100 + 'vw';
+            heart.style.left = startPositionX;
+
+            body.appendChild(heart);
+
+            // ลบหัวใจออกจากหน้าเว็บหลังจากแอนิเมชันจบ
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);  // 4 วินาที (ตามเวลาของแอนิเมชัน)
+        }
+    }
+
+    // เรียกใช้ฟังก์ชันเมื่อโหลดหน้า
+    window.onload = createHearts;
+</script>
+
+</body>
+
+</html>
